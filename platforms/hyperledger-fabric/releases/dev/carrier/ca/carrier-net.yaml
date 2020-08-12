@@ -26,7 +26,7 @@ spec:
       storagesize: 512Mi
     vault:
       role: vault-role
-      address: http://104.211.1.7:80
+      address: http://13.71.136.104:80
       authpath: carrier-net-auth
       secretcert: secret/crypto/peerOrganizations/carrier-net/ca?ca.carrier-net-cert.pem
       secretkey: secret/crypto/peerOrganizations/carrier-net/ca?carrier-net-CA.key
