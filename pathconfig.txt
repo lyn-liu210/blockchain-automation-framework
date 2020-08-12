@@ -1,0 +1,5 @@
+export PATH=~/project/bin:$PATH
+export VAULT_ADDR='http://13.71.136.104:80' 
+export VAULT_TOKEN=""s.IUlbUNy7IXph5iwO2md7XyGv
+eval "$(ssh-agent)"
+ssh-add ~/.ssh/gitops
