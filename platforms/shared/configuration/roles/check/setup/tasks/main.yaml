@@ -13,8 +13,8 @@
   shell: |
     vault auth list
   environment:
-    VAULT_ADDR: "{{ vault.url }}"
-    VAULT_TOKEN: "{{ vault.root_token }}"
+    VAULT_ADDR: "{{vault.url}}"
+    VAULT_TOKEN: "{{vault.root_token}}"
   register: auth_lists
   when: check == "vault_auth"
 
@@ -23,8 +23,8 @@
   shell: |
     vault policy read vault-crypto-{{ component_type }}-{{ component_name }}-ro
   environment:
-    VAULT_ADDR: "{{ vault.url }}"
-    VAULT_TOKEN: "{{ vault.root_token }}"
+    VAULT_ADDR: "{{vault.url}}"
+    VAULT_TOKEN: "{{vault.root_token}}"
   register: vault_policy_result
   ignore_errors: yes
   when: check == "vault_policies"

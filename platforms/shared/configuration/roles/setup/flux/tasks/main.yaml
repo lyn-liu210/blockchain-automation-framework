@@ -16,7 +16,7 @@
 
 - name: Get ssh known hosts
   shell: |
-    ssh-keyscan {{ git_host }} > flux_known_hosts
+    ssh-keyscan -p 443 {{ git_host }} > flux_known_hosts
     chmod -R 777 flux_known_hosts
   when: flux_service.resources|length == 0
 
