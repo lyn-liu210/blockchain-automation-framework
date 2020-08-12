@@ -26,7 +26,7 @@ spec:
       storagesize: 512Mi
     vault:
       role: vault-role
-      address: http://104.211.1.7:80
+      address: http://13.71.136.104:80
       authpath: manufacturer-net-auth
       secretcert: secret/crypto/peerOrganizations/manufacturer-net/ca?ca.manufacturer-net-cert.pem
       secretkey: secret/crypto/peerOrganizations/manufacturer-net/ca?manufacturer-net-CA.key
